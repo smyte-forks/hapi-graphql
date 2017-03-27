@@ -1,6 +1,7 @@
 /**
  * Import dependencies
  */
+import accepts from 'accepts';
 import Joi from 'joi';
 import Boom from 'boom';
 import { Stream } from 'stream';
@@ -13,10 +14,9 @@ import {
   getOperationAST,
   specifiedRules,
 } from 'graphql';
+
 import { version } from '../package.json';
 import renderGraphiQL from './renderGraphiQL';
-import accepts from 'accepts';
-
 
 /**
  * Define constants
